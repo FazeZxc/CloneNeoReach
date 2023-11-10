@@ -29,6 +29,7 @@ body {
 }
 
 .header {
+  z-index: 1;
   position: fixed;
   width: 100%;
 }
@@ -150,6 +151,8 @@ nav {
 }
 
 .img-wrapper {
+  display: flex;
+  flex-direction: column;
   height: 1013px;
   padding: 300px 300px;
 }
@@ -199,4 +202,90 @@ nav {
 .text-section button:hover {
   background-color: black;
   color: #00C3AB;
+}
+
+
+.hero-img-1 {
+  z-index: 0;
+  position: absolute;
+  width: 536px;
+  height: 540px;
+  top: 240px;
+  right: 1100px;
+}
+
+.hero-img-2 {
+  z-index: 0;
+  position: absolute;
+  top: 250px;
+  right: 500px;
+  width: 536px;
+  height: 519px;
+}
+
+.brands-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0 100px;
+}
+
+.brands {
+  height: 80px;
+}
+
+.ornament {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: 100px;
+  top: 1100px;
+}
+
+.page2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 300px;
+  height: 263px;
+}
+
+
+.page2 h2 {
+  width: 840px;
+  height: 162px;
+  margin: 0 0 14px;
+  font-size: 40px;
+  font-family: proxima, sans-serif;
+  text-align: center;
+}
+
+.page2 p {
+  width: 840px;
+  height: 108px;
+  font-size: 20px;
+  font-family: proxima, sans-serif;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.page2 button {
+  text-transform: uppercase;
+  margin: 25px 0 0;
+  font-size: 17px;
+  padding: 21px 36px;
+  border-radius: 10px;
+  border: none;
+  background-color: #00C3AB;
+  color: white;
+  font-weight: 750;
+  letter-spacing: 2px;
+  transition: all .5s;
+  font-family: proxima, sans-serif;
+  width: 200px;
+  height: 62px;
 }
